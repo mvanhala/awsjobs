@@ -1,0 +1,18 @@
+Package: awsjobs
+Title: Running R Scripts on AWS EC2 Instances
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Matthew",
+           family = "Van Hala",
+           role = c("aut", "cre"),
+           email = "matthew.vanhala@gmail.com")
+Description: Functions for launching, managing, and controlling
+    jobs run on EC2 instances.
+License: GPL-3
+Imports: 
+    magrittr,
+    rlang
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
