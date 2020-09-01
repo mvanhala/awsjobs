@@ -84,6 +84,17 @@ environment variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`, which wil
 by `paws` credential detection), or by being granted to an IAM role associated with the 
 RStudio Server instance.
 
+An example of a script for creating an AMI to use with worker instances is in the
+[mvanhala/illustrations repo](https://github.com/mvanhala/illustrations/tree/master/code/aws_worker_jobs). 
+The R script programmatically uses the `paws` SDK
+to launch an EC2 instance, execute a shell script installing R, various system libraries, and
+a collection of R packages, and create and tag an AMI for subsequent use in launching EC2 
+worker instances. One can easily extend this to place R packages within the EFS storage and
+setting a few environment variables, 
+as well as using [renv](https://github.com/rstudio/renv) for package management, 
+thereby enabling tighter integration of the R package environment between the development
+environment on RStudio and the execution environment on the EC2 worker instances.
+
 ## Future enhancements
 
 As opposed to relying on files being stored in attached EFS storage accessible to both
