@@ -1,17 +1,35 @@
 Package: awsjobs
 Title: Running R Scripts on AWS EC2 Instances
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person(given = "Matthew",
            family = "Van Hala",
            role = c("aut", "cre"),
            email = "matthew.vanhala@gmail.com")
-Description: Functions for launching, managing, and controlling
-    jobs run on EC2 instances.
+Description: Functions for launching and managing worker jobs
+    for running R scripts on AWS EC2 instances.
 License: GPL-3
+URL: https://github.com/mvanhala/awsjobs
+BugReports: https://github.com/mvanhala/awsjobs/issues
 Imports: 
+    base64enc,
+    checkmate,
+    digest,
+    dplyr,
+    fs,
+    glue,
+    lubridate,
     magrittr,
-    rlang
+    paws,
+    ps,
+    purrr,
+    rlang,
+    rstudioapi,
+    sodium,
+    stringr,
+    tibble,
+    tidyr,
+    withr
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
