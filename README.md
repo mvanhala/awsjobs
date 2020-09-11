@@ -56,7 +56,7 @@ running EC2 instances by instance id.
 ## Assumptions and setup
 
 Launching/terminating EC2 worker instances and sending SSM commands 
-is performed using the [`paws`]9https://github.com/paws-r/paws) package,
+is performed using the [`paws`](https://github.com/paws-r/paws) package,
 AWS SDK for R.
 
 It is assumed that that the R scripts or R Markdown documents to execute are located on 
